@@ -1,6 +1,7 @@
 check_wiener_pars <- function(alpha,tau,beta,delta)
 {
-  stopifnot(is.numeric(alpha) , is.numeric(tau), is.numeric(beta), is.numeric(delta) , alpha > 0 , tau > 0 , beta >= 0 , beta <= 1) 
+  stopifnot(is.numeric(alpha) , is.numeric(tau), is.numeric(beta), 
+    is.numeric(delta) , alpha > 0 , tau > 0 , beta >= 0 , beta <= 1) 
 }
 
 dwiener <- function(q, alpha,tau,beta,delta, resp="upper", give_log=FALSE) 
