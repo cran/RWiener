@@ -5,13 +5,12 @@
 \alias{rwiener}
 \title{Wiener process distribution functions}
 \description{
-  \code{dwiener} computes the wiener first passage time density, using the
-  method by Navarro and Fuss (2009).
+  \code{dwiener} computes the wiener first passage time density.
   \code{pwiener} computes the CDF for the wiener first passage time
-  density, using the method by Blurton et al. (2012).
+  density.
   \code{qwiener} computes the quantile for a given CDF value.
   \code{rwiener} generates random quantiles from a wiener process
-  distribution, based on the rejection based method by Tuerlinckx et al. (2001).
+  distribution, based on the rejection based method.
   For all functions, the standard deviation of the diffusion process is
   fixed to 1.
 }
@@ -34,13 +33,13 @@
   \item{give_log}{function returns log, if this argument is TRUE}
 }
 \examples{
-## calculate density for reactiontime 1.45 and some parameters
+## calculate density for reactiontime 1.45, upper bound and some parameters
 dwiener(1.45, 2,0.3,0.5,0)
 
-## calculate CDF for reactiontime 1.45 and some parameters
+## calculate CDF for reactiontime 1.45, upper bound and some parameters
 pwiener(1.45, 2,0.3,0.5,0)
 
-## calculate quantile for CDF value of 0.5 and some parameters
+## calculate quantile for CDF value of 0.5, upper bound and some parameters
 qwiener(0.5, 2,0.3,0.5,0)
 
 ## generate one random value
@@ -52,15 +51,7 @@ rwiener(1, 2,0.3,0.5,0)
 \keyword{rwiener}
 
 \references{
-Blurton, S., Kesselmeier, M., and Gondan, M. (2012). Fast and accurate
-calculations for cumulative first-passage time distributions in Wiener
-diffusion models. Journal of Mathematical Psychology.
-
-Navarro, D., and Fuss, I. (2009). Fast and accurate calculations for
-first-passage times in Wiener diffusion models. Journal of Mathematical
-Psychology, 53 (4), 222-230.
-
-Tuerlinckx, F., Maris, E., Ratcliff, R., and De Boeck, P. (2001). A
-comparison of four methods for simulating the diffusion process. Behavior
-Research Methods, 33 (4), 443-456.
+Wabersich, D., & Vandekerckhove, J. (2014). The RWiener package: An R
+package providing distribution functions for the Wiener diffusion model.
+The R Journal, 6(1), 49-56.
 }

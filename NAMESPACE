@@ -1,17 +1,82 @@
-useDynLib(RWiener, dwiener_c = dwiener, 
-                   pwiener_c = pwiener, 
-                   pwiener_full_c = pwiener_full, 
-                   qwiener_c = qwiener, 
-                   qwiener_full_c = qwiener_full, 
-                   rwiener_c = rwiener)
-export (
-dwiener,
-pwiener,
-qwiener,
-rwiener,
-wiener_likelihood,
-wiener_deviance,
-wiener_aic,
-wiener_bic,
-wiener_plot
+## imported packages
+importFrom("stats",
+  "logLik",
+  "AIC", "BIC", "deviance",
+  "density", "na.omit", "runif",
+  "nlm", "optim",
+  "pchisq",
+  "coef", "nobs", 
+  "pnorm",
+  "aggregate", "vcov", "confint",
+  "confint.default", "qnorm"
 )
+importFrom("graphics", 
+  "mtext", "par", "plot", "rug"
+)
+
+## C functions
+useDynLib("RWiener", 
+  "dwiener_c" = "dwiener", 
+  "pwiener_c" = "pwiener", 
+  "pwiener_full_c" = "pwiener_full", 
+  "qwiener_c" = "qwiener", 
+  "qwiener_full_c" = "qwiener_full", 
+  "rwiener_c" = "rwiener"
+)
+
+## exported functions
+export (
+"dwiener",
+"pwiener",
+"qwiener",
+"rwiener",
+"print.wdm",
+"logLik.wdm",
+"AIC.wdm",
+"BIC.wdm",
+"deviance.wdm",
+"wdm",
+"estfun",
+"estfun.wdm",
+"scorefun",
+"scorefun.wdm",
+"is.wiener",
+"as.wiener",
+"revamp",
+"revamp.data.wiener",
+"revamp.numdata.wiener",
+"revamp.data.frame",
+"wiener_likelihood",
+"wiener_deviance",
+"wiener_aic",
+"wiener_bic",
+"wiener_plot",
+"anova.wdm",
+"vcov.wdm",
+"confint.wdm",
+"summary.wdm",
+"print.summary.wdm",
+"waldtest",
+"waldtest.wdm",
+"print.wwaldt"
+)
+
+## exported s3 methods
+S3method("print", "wdm")
+S3method("logLik", "wdm")
+S3method("AIC", "wdm")
+S3method("BIC", "wdm")
+S3method("deviance", "wdm")
+S3method("estfun", "wdm")
+S3method("scorefun", "wdm")
+S3method("anova", "wdm")
+S3method("vcov", "wdm")
+S3method("confint", "wdm")
+S3method("summary", "wdm")
+S3method("print", "summary.wdm")
+S3method("plot", "data.wiener")
+S3method("revamp", "data.wiener")
+S3method("revamp", "numdata.wiener")
+S3method("revamp", "data.frame")
+S3method("waldtest", "wdm")
+S3method("print", "wwaldt")
