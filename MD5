@@ -1,4 +1,4 @@
-9ce95edc6215d7c9b489739f92f0e374 *DESCRIPTION
+27d5ed462e2e6a9f3c845a50b2fcc66c *DESCRIPTION
 111a2a732bf4bd56006d2d6351dd2ead *NAMESPACE
 e87dab922ad3b551fba9a72dcfe25535 *R/deprecated.R
 c1f7ded2bb0874f8d5c2e89b68dc63e3 *R/likelihood.R
@@ -17,8 +17,8 @@ c1509d73c0d7c8824b2db46dfabc637c *man/deprecated.Rd
 0e0f5def5f6fd2aac7de4e79fe3fb76e *man/misc.Rd
 25596a7b4e0b1ba17b6c05a196d47479 *man/plot.Rd
 dc60be0799c21b0123f2a533c9e108d0 *man/scorefun.Rd
-b7ec7647b71748d1c52ec4d8cd39e513 *man/tests.Rd
-5906b8f57d8cdb148c55553006284323 *man/wdm.Rd
+8e274c21a3486a99c293d9ff38e0c7ab *man/tests.Rd
+f38e68298b78775075f42d122251029c *man/wdm.Rd
 08fdfeadc094bbe5be7ef3da75284548 *man/wienerdist.Rd
 542ed569839ae7f3b5976eb14429d899 *src/dwiener.c
 31d8bb9f7ee4c327f9852b5ac8c5c775 *src/init.c
