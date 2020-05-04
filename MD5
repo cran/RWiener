@@ -1,4 +1,4 @@
-27d5ed462e2e6a9f3c845a50b2fcc66c *DESCRIPTION
+e1e43a453a130f91ce2c50fa77359444 *DESCRIPTION
 111a2a732bf4bd56006d2d6351dd2ead *NAMESPACE
 e87dab922ad3b551fba9a72dcfe25535 *R/deprecated.R
 c1f7ded2bb0874f8d5c2e89b68dc63e3 *R/likelihood.R
@@ -23,5 +23,5 @@ f38e68298b78775075f42d122251029c *man/wdm.Rd
 542ed569839ae7f3b5976eb14429d899 *src/dwiener.c
 31d8bb9f7ee4c327f9852b5ac8c5c775 *src/init.c
 c42872af42a5c6a773a8f61f77e93247 *src/pwiener.c
-66de437a5b15943f695b44484c379f22 *src/qwiener.c
-02248223518329ce8907e122f38c74c2 *src/rwiener.c
+9e1ce2cb99cb70d4fffcbabe33928285 *src/qwiener.c
+05f3d10ce31de35336a363b544f744c4 *src/rwiener.c
